@@ -1,0 +1,10 @@
+.bg {
+    /* The image used */
+    background-image: url("http://www.verve-magazine.com/newverveorder/wp-content/uploads/2012/03/warhol_headlines1.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
