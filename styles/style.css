@@ -54,7 +54,9 @@ body {
     
 }
 
-
+.btn-primary {
+    float: right;
+}
 
 
 #section1 {
@@ -62,6 +64,7 @@ body {
     height: 500px;
     color: #fff;
     background-color: #1E88E5;
+    
 }
 
 #section2 {
