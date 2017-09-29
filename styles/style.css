@@ -1,3 +1,12 @@
+#logo-container {
+    height: 200px;
+    background-image: url("../images/FloridaManUpdate_hdr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    /*padding: 40px; (If don't want to set min-height or some image content is there) */
+  }
+
 body,
 html {
     height: 100%;
@@ -33,6 +42,20 @@ body {
     position: relative;
     top: 50px;
 }
+
+.jumbotron {
+    padding: 20px;
+    width: 700px; 
+    margin: 40px;
+    line-height: .5;
+    font-size: 20px;
+    color: #F76C15;
+    background-color: blue;
+    
+}
+
+
+
 
 #section1 {
     padding-top: 50px;
