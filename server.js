@@ -86,30 +86,27 @@ app.get("/scrape", function(req, res) {
 
         });
     });
-    // Tell the browser that we finished scraping the text
+    // Tell the browser that we finished scraping the site
     res.send("Scrape Complete");
-    $.getJSON("/articles", function(data) {
-        // For each one
-        for (var i = 0; i < data.length; i++) {
-            // Display the information on the page
-            $("#scrapedStories").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
-        }
-    });
+  
 });
 
 // This will get the articles we scraped from the mongoDB
 app.get("/articles", function(req, res) {
+    console.log("route hit yo");
+    
 
-
-    // TODO: Finish the route so it grabs all of the articles
-    Article.find({}, function(error, doc) {
+    Article.find({}, function(error, result) {
+        console.log(result);
+        res.json(result);
+        
         // Send any errors to the browser
         if (error) {
             res.send(error);
         }
         // Or send the doc to the browser
         else {
-            res.send(doc);
+            res.send(result);
         }
      
     });
