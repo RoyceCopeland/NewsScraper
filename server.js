@@ -53,19 +53,18 @@ db.once("open", function() {
 // Routes
 // ======
 
-// A GET request to scrape the echojs website
+// A GET request to scrape the website
 app.get("/scrape", function(req, res) {
-    // First, we grab the body of the html with request
     request("https://www.reddit.com/r/FloridaMan//", function(error, response, html) {
         // Then, we load that into cheerio and save it to $ for a shorthand selector
         var $ = cheerio.load(html);
-        // Now, we grab every h2 within an article tag, and do the following:
+        // Now, we grab every p tag with a title class
         $("p.title").each(function(i, element) {
 
             // Save an empty result object
             var result = {};
 
-            // Add the text and href of every link, and save them as properties of the result object
+            // Add the title text and href of every link, and save them as properties of the result object
             result.title = $(this).children("a").text();
             result.link = $(this).children("a").attr("href");
 
@@ -89,6 +88,13 @@ app.get("/scrape", function(req, res) {
     });
     // Tell the browser that we finished scraping the text
     res.send("Scrape Complete");
+    $.getJSON("/articles", function(data) {
+        // For each one
+        for (var i = 0; i < data.length; i++) {
+            // Display the information on the page
+            $("#scrapedStories").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+        }
+    });
 });
 
 // This will get the articles we scraped from the mongoDB
