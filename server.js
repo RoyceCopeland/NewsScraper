@@ -88,6 +88,7 @@ app.get("/scrape", function(req, res) {
     });
     // Tell the browser that we finished scraping the site
     res.send("Scrape Complete");
+    console.log("scrape complete")
   
 });
 
