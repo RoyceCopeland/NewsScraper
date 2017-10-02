@@ -1,13 +1,19 @@
 
 
 // When the page loads, scrape the articles
-function getArticles() {
+function getNewArticles() {
+   // $.remove("/clear", function(){
+   //     console.log("cleared the db");
     $.get("/scrape", function(){
-console.log("scraped that thang");
+console.log("scraped articles/loaded the db");
+
     });
+
 };
 
-getArticles();
+//};
+
+getNewArticles();
 
 
 

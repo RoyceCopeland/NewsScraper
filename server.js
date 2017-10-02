@@ -53,6 +53,31 @@ db.once("open", function() {
 // Routes
 // ======
 
+// Refresh the database upon loading page
+
+//  app.remove("/clear", function(req, res) {
+//      console.log("remove route hit");
+//      
+//  
+//      Article.find({}, function(error, result) {
+//       //   console.log(result);
+//          res.json(result);
+//          
+//          // Send any errors to the browser
+//          if (error) {
+//              res.send(error);
+//          }
+//          // Or send the doc to the browser
+//          else {
+//              res.send(result);
+//          }
+//       
+//      });
+//  
+//  });
+
+
+
 // A GET request to scrape the website
 app.get("/scrape", function(req, res) {
     request("https://www.reddit.com/r/FloridaMan//", function(error, response, html) {
@@ -94,7 +119,7 @@ app.get("/scrape", function(req, res) {
 
 // This will get the articles we scraped from the mongoDB
 app.get("/articles", function(req, res) {
-    console.log("route hit yo");
+    console.log("articles route hit");
     
 
     Article.find({}, function(error, result) {
