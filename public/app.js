@@ -1,17 +1,21 @@
 
 
-// When the page loads, scrape the articles
+// When the page loads, empty the db and scrape the latest articles into it.
 function getNewArticles() {
-   // $.remove("/clear", function(){
-   //     console.log("cleared the db");
+    $.get("/clear", function(req, result){
+        console.log("cleared the db");
+        $.getJSON("/clear", function(data) {
+            console.log(data);
+        
     $.get("/scrape", function(){
 console.log("scraped articles/loaded the db");
-
+    
     });
 
-};
+});
+});
 
-//};
+};
 
 getNewArticles();
 

@@ -55,25 +55,32 @@ db.once("open", function() {
 
 // Refresh the database upon loading page
 
-//  app.remove("/clear", function(req, res) {
-//      console.log("remove route hit");
-//      
-//  
-//      Article.find({}, function(error, result) {
-//       //   console.log(result);
-//          res.json(result);
-//          
-//          // Send any errors to the browser
-//          if (error) {
-//              res.send(error);
-//          }
-//          // Or send the doc to the browser
-//          else {
-//              res.send(result);
-//          }
-//       
-//      });
-//  
+  app.get("/clear", function(req, res) {
+      console.log("clear route hit");
+       Article.remove({}, function(error, result){
+
+           res.send(result);
+    
+    });
+  });
+//        
+//    
+//        Article.find({}), function() {
+//         //   console.log(result);
+//      //      res.json(result);
+//      //      
+//      //      // Send any errors to the browser
+//      //      if (error) {
+//      //          res.send(error);
+//      //      }
+//      //      // Or send the doc to the browser
+//      //      else {
+//      //          res.send(result);
+//      //      }
+//      //   
+//      //  });
+//    
+//    }
 //  });
 
 
