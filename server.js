@@ -132,15 +132,6 @@ app.get("/articles", function(req, res) {
     Article.find({}, function(error, result) {
         console.log(result);
         res.json(result);
-        
-        // Send any errors to the browser
-        if (error) {
-            res.send(error);
-        }
-        // Or send the doc to the browser
-        else {
-            res.send(result);
-        }
      
     });
 

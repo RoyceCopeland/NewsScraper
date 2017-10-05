@@ -28,6 +28,15 @@ body {
     position: relative;
 }
 
+ a {color:#110D0D;}
+
+
+
+/* a:link {color:#FCFAFA;} */
+a:visited {color:#0000ff;text-decoration: none; }
+a:hover {color:#ffcc00;text-decoration: none; }
+
+
 .affix {
     top: 0;
     width: 100%;
@@ -93,4 +102,15 @@ body {
     height: 500px;
     color: #fff;
     background-color: #009688;
+}
+
+.bg2 {
+    /* The image used */
+    background-image: url("../images/floridaman_bg2.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

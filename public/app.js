@@ -23,16 +23,22 @@ getNewArticles();
 
 // Grab the articles as a json
 $('#scrapeIt').on('click', function(e) {
+ //   $(this).prop("disabled", "disabled");
+    
     e.preventDefault();
+   
+    
     console.log('click');
 
 
-    $.getJSON("/articles", function(data) {
+    $.get("/articles", function(data) {
         console.log(data);
         // For each one
         for (var i = 0; i < data.length; i++) {
+            console.log(data[i]);
             // Display the information on the page
-            $("#scrapedStories").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+            $("#scrapedStories").append("<div class='panel panel-default'> <div class='panel-body'><p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p></div><button type=button class=btn btn-primary>Save This Story!</button></div>");
+     //       $("#scrapedStories").append("<p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p>");
         }
     });
 });
