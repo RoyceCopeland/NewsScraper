@@ -67,6 +67,14 @@ a:hover {color:#ffcc00;text-decoration: none; }
     float: right;
 }
 
+#storySave {
+    position: relative;
+    width: 475px; 
+    background-color: #CE2727;
+  
+    
+}
+
 
 #section1 {
     padding-top: 50px;

@@ -23,9 +23,9 @@ getNewArticles();
 
 // Grab the articles as a json
 $('#scrapeIt').on('click', function(e) {
- //   $(this).prop("disabled", "disabled");
+    $('#scrapeIt').unbind('onclick');
     
-    e.preventDefault();
+   // e.preventDefault();
    
     
     console.log('click');
@@ -37,10 +37,13 @@ $('#scrapeIt').on('click', function(e) {
         for (var i = 0; i < data.length; i++) {
             console.log(data[i]);
             // Display the information on the page
-            $("#scrapedStories").append("<div class='panel panel-default'> <div class='panel-body'><p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p></div><button type=button class=btn btn-primary>Save This Story!</button></div>");
+            $("#scrapedStories").append("<div class='panel panel-default'> <div class='panel-body'><p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p></div><button id=storySave type=button class=btn btn-primary>Save This Story!</button></div>");
      //       $("#scrapedStories").append("<p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p>");
-        }
-    });
+     
+    }
+       alert("You have " + data.length + " Florida Man adventures to read!");
+
+});
 });
 
 
