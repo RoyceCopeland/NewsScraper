@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    /*padding: 40px; (If don't want to set min-height or some image content is there) */
   }
 
 body,
@@ -32,7 +31,6 @@ body {
 
 
 
-/* a:link {color:#FCFAFA;} */
 a:visited {color:#0000ff;text-decoration: none; }
 a:hover {color:#ffcc00;text-decoration: none; }
 

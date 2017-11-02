@@ -2,18 +2,18 @@
 
 // When the page loads, empty the db and scrape the latest articles into it.
 function getNewArticles() {
-    $.get("/clear", function(req, result){
+    $.get("/clear", function (req, result) {
         console.log("cleared the db");
-        $.getJSON("/clear", function(data) {
+        $.getJSON("/clear", function (data) {
             console.log(data);
-        
-    $.get("/scrape", function(){
-console.log("scraped articles/loaded the db");
-    
-    });
 
-});
-});
+            $.get("/scrape", function () {
+                console.log("scraped articles/loaded the db");
+
+            });
+
+        });
+    });
 
 };
 
@@ -22,28 +22,27 @@ getNewArticles();
 
 
 // Grab the articles as a json
-$('#scrapeIt').on('click', function(e) {
+$('#scrapeIt').on('click', function (e) {
     $('#scrapeIt').unbind('onclick');
-    
-   // e.preventDefault();
-   
-    
+
+    // e.preventDefault();
+
+
     console.log('click');
 
 
-    $.get("/articles", function(data) {
+    $.get("/articles", function (data) {
         console.log(data);
         // For each one
         for (var i = 0; i < data.length; i++) {
             console.log(data[i]);
             // Display the information on the page
             $("#scrapedStories").append("<div class='panel panel-default'> <div class='panel-body'><p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p></div><button id=storySave type=button class=btn btn-primary>Save This Story!</button></div>");
-     //       $("#scrapedStories").append("<p data-id='" + data[i]._id + "'><br/><a target='_blank' href=" + data[i].link + ">" + data[i].title + "</a></p>");
-     
-    }
-       alert("You have " + data.length + " Florida Man adventures to read!");
 
-});
+        }
+        alert("You have " + data.length + " Florida Man adventures to read!");
+
+    });
 });
 
 
