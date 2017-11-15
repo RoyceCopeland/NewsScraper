@@ -5,7 +5,7 @@ Gathering news articles from the internet
 Using Cheerio to scrape data and MongoDB to store it, this project succeeded in its core functionality goals, but still needs some tweaking to tighten it up visually.
 
 ## Outstanding Issues
-Ongoing glitch with random links not populating correctly.
+Unsolved bug with random links not populating correctly.
 
 
 <!-- ## Getting Started
