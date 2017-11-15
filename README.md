@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What what what aht things you need to install the software and how to install them
+What are the things you need to install the software and how to install them
 
 ```
 Give examples
@@ -82,7 +82,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->
 
-<!-->## Acknowledgments
+<!-- ## Acknowledgments
 
 * THANK YOU to my wife for her ongoing support and encouragement.
 * Big thanks to Josh Dodd for hanging in there with me.
