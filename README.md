@@ -1,5 +1,5 @@
 # NewsScraper
-Gathering news articles from the internet
+Gathering, storingm and displaying internet news articles.
 
 ## Overview
 Using Cheerio to scrape data and MongoDB to store it, this project succeeded in its core functionality goals, but still needs some tweaking to tighten it up visually.
