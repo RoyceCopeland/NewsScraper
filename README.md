@@ -1,13 +1,9 @@
 # NewsScraper
-Using Mongo and Cheerio to gather news articles
-# CaseMate
+Gathering news articles from the internet
+
 ## Overview
+Using Mongo and Cheerio to gather news articles
 
-Created with law firms in mind, CaseMate's core functionality vision is a mobile, secure, and user-friendly client portal for the day-to-day journaling and archiving of all case-related data, as well as facilitating easy and direct communication between client and case manager/lawyer.
-
-Here's our logo!
-
-![CaseMate](https://github.com/RoyceCopeland/CaseMate/tree/master/client/public/img/CaseMate_logo.png "CaseMate")
 
 <!-- ## Getting Started
 
@@ -65,7 +61,7 @@ Add additional notes about how to deploy this on a live system -->
 
 ## Built With
 
-* [React](https://reactjs.org/) - Framework
+* [Cheerio](https://cheerio.js.org/) - Web Scraper
 * [MongoDB](https://www.mongodb.com/) - Database
 
 <!-- ## Contributing
@@ -76,22 +72,21 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).  -->
 
-## Authors
+## Author
 
 * [**Royce Copeland**](https://github.com/RoyceCopeland)
-* [**Josh Dodd**](https://github.com/joshuadodd)
 
 <!-- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. -->
 
-## License
+<!-- ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->
 
-## Acknowledgments
+<!-->## Acknowledgments
 
 * THANK YOU to my wife for her ongoing support and encouragement.
 * Big thanks to Josh Dodd for hanging in there with me.
-* Standing Ovation to [**CJ Jordan**](https://github.com/CjJordan) and [**Hannah Patellis**](https://github.com/hannahpatellis) for their perpetual enthusiasm and patience as both coders and teachers.
+* Standing Ovation to [**CJ Jordan**](https://github.com/CjJordan) and [**Hannah Patellis**](https://github.com/hannahpatellis) for their perpetual enthusiasm and patience as both coders and teachers. -->
 
 <!-- ![GitHub Logo](../img/justice_bkgnd.jpg)
 Format: ![Alt Text](url) -->
