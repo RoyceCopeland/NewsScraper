@@ -2,7 +2,10 @@
 Gathering news articles from the internet
 
 ## Overview
-Using Mongo and Cheerio to gather news articles
+Using Cheerio to scrape data and MongoDB to store it, this project succeeded in its core functionality goals, but still needs some tweaking to tighten it up visually.
+
+## Outstanding Issues
+Ongoing glitch with random links not populating correctly.
 
 
 <!-- ## Getting Started
@@ -75,22 +78,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Author
 
 * [**Royce Copeland**](https://github.com/RoyceCopeland)
-
-<!-- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. -->
-
-<!-- ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->
-
-<!-- ## Acknowledgments
-
-* THANK YOU to my wife for her ongoing support and encouragement.
-* Big thanks to Josh Dodd for hanging in there with me.
-* Standing Ovation to [**CJ Jordan**](https://github.com/CjJordan) and [**Hannah Patellis**](https://github.com/hannahpatellis) for their perpetual enthusiasm and patience as both coders and teachers. -->
-
-<!-- ![GitHub Logo](../img/justice_bkgnd.jpg)
-Format: ![Alt Text](url) -->
-
-
-[Check out CaseMate's ongoing progress on Heroku](http://case-mate.herokuapp.com/#)
-
